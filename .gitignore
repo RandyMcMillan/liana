@@ -8,3 +8,13 @@ venv/
 pytest.log
 TODO
 **/target
+
+.DS_Store
+gui/.DS_Store
+gui/src/.DS_Store
+gui/src/app/.DS_Store
+gui/src/app/state/.DS_Store
+gui/src/app/view/.DS_Store
+gui/src/daemon/.DS_Store
+gui/src/ui/.DS_Store
+gui/static/.DS_Store
