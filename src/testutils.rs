@@ -5,7 +5,7 @@ use crate::{
     descriptors, DaemonHandle,
 };
 
-use std::{collections::HashMap, env, fs, io, path, process, str::FromStr, sync, thread, time};
+use std::{collections::HashMap, env, fs, /*io,*/ path, process, str::FromStr, sync, thread, time};
 
 use miniscript::{
     bitcoin::{
@@ -416,12 +416,12 @@ impl DummyLiana {
         DummyLiana { tmp_dir, handle }
     }
 
-    #[cfg(feature = "jsonrpc_server")]
-    pub fn rpc_server(self) -> Result<(), io::Error> {
-        self.handle.rpc_server()?;
-        fs::remove_dir_all(&self.tmp_dir)?;
-        Ok(())
-    }
+    // #[cfg(feature = "jsonrpc_server")]
+    // pub fn rpc_server(self) -> Result<(), io::Error> {
+    //     self.handle.rpc_server()?;
+    //     fs::remove_dir_all(&self.tmp_dir)?;
+    //     Ok(())
+    // }
 
     pub fn shutdown(self) {
         self.handle.shutdown();

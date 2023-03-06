@@ -91,6 +91,7 @@ report:## 	report
 
 .PHONY: liana
 .ONESHELL:
+cargo: liana
 liana:## 	liana
 	$(MAKE) cargo-build
 	$(MAKE) cargo-install

@@ -212,7 +212,7 @@ mod tests {
     use super::*;
     use crate::{
         jsonrpc::{Params, ReqId},
-        testutils::*,
+        // testutils::*,
     };
 
     use std::{env, fs, io::Write, process};
